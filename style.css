@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+.menu {
+    padding: 40px 0;
+    background-color: #fff; /* White background for the menu */
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    width: calc(30% - 20px); /* Responsive width */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.about, .contact {
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    .menu-item {
+        width: calc(48% - 20px); /* Two menu items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item {
+        width: calc(100% - 20px); /* Single menu item per row */
+    }
+}
